@@ -1,0 +1,16 @@
+Pin Config:
+	En_R:GPIO 18
+	En_L:GPIO 12
+	IN_1:GPIO 14
+	In_2:GPIO 15
+	In_3:GPIO 16
+	In_4:GPIO 20
+
+Control							Press Key
+Increasing Speed Motor Right	"F"
+Increasing Speed Motor Left		"J"
+Decreasing Speed Motor Right	"D"
+Decreasing Speed Motor Left		"K"
+Brake							"B"
+Backward Forward				"R"
+Autonomous						"A"
