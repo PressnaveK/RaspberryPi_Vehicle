@@ -310,8 +310,7 @@ class Video_Cap(QThread):
             frame = cv2.rotate(frame,cv2.ROTATE_90_COUNTERCLOCKWISE)
             if ret:
                 Image = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
-                FlippedImg = cv2.flip(Image,1)
-                ConvertToQt = QImage(FlippedImg.data,FlippedImg.shape[1],FlippedImg.shape[0],QImage.Format_RGB888)
+                ConvertToQt = QImage(Image.data,Image.shape[1],Image.shape[0],QImage.Format_RGB888)
                 Pic = ConvertToQt.scaled(441,862,Qt.KeepAspectRatio)
                 self.ImageUpdate.emit(Pic)
     def stop(self):
